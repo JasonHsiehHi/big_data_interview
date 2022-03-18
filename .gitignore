@@ -1,0 +1,5 @@
+# MAC-OS & VScode 
+.DS_Store
+.idea/
+.vscode/
+jsconfig.json
