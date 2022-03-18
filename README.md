@@ -24,10 +24,12 @@ password:big_data
 文章分為每日排名調查(type:Daily)與網路人氣話題(type:Popular)兩種
 兩種類別的差別只在內容格式(content)
 
-網路人氣話題文章 可依序自由插入小標題, 圖片, 文字內容, 提示字段...等\
+網路人氣話題文章:\
+可依序自由插入小標題, 圖片, 文字內容, 提示字段...等 
+
 故資料型態採用list: [\<sub_title>, \<content1>, \<content2>, \<img_src>,... ]
 
-Popular:
+網路人氣話題(Popular): \
 {
     "type": "Popular",  \
     "content": [
@@ -58,10 +60,12 @@ Popular:
     "publisher": <publisher_id>  \
 }
 
-每日排名調查文章 則將不同排名的文字內容分成不同的區塊(text_box)，而每個區塊由標題(topic_title), 內容(content), 圖片(image)依序組成
+每日排名調查文章:\
+則將不同排名的文字內容分成不同的區塊(text_box)，而每個區塊由標題(topic_title), 內容(content), 圖片(image)依序組成
+
 故資料型態採用dict： {"top":[\<topic_title>,\<content>,\<image>], "rank10":[\<topic_title>,\<content>,\<image>], "rank9":...}
 
-Daily:
+每日排名調查(Daily): \
 {
     "type": "Daily",  \
     "content": {
